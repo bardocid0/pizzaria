@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+.cabecalho {
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+}
+.cabecalho > img{
+    height: 60px;
+    padding-left: 20px;
+}
+.menu {
+    display: flex;
+    align-items: center;
+}
+.menu > li {
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+.menu > li > a {
+    color: white;
+    text-decoration: none;
+    text-shadow: 2px 2px black;
+    font-weight: 600;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.menu > li:hover {
+    background-color: darkred;
+    height: 80px;
+}
+.pizza-fundo {
+    background-image: url(/pizzaria/img/pizza.jpg);
+    height: 400px;
+    background-position: top center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.736);
+}
+h1 {
+    text-align: center;
+    color: white;
+    padding: 10px;
+    text-shadow: 2px 2px black;
+}
+.botao-vazado {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.668);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 2px;
+    padding: 10px;
+}
+main {
+    max-width: 1300px;
+    margin: 0 auto;
+    text-align: center;
+}
+h2 {
+    margin-top: 20px;
+    margin-bottom: 8px;
+    color: green;
+}
+hr {
+    border: none;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 10%, rgba(255,0,0,1) 50%, rgba(255,255,255,1) 90%);
+    height: 3px;
+    margin-bottom: 7px;
+}
+.sabores {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.sabor {
+    margin: 10px;
+    background: rgb(1,255,0);
+    background: linear-gradient(180deg, rgba(1,255,0,1) 30%, rgba(13,175,0,1) 70%);
+    border-radius: 5%;
+}
+.preco {
+    border: solid 2px black;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    background-color: yellow;
+}
+.nome {
+    color: white;
+    text-shadow: 2px 1.5px black;
+    margin-bottom: 10px;
+}
+.promocoes {
+    display: flex;
+    justify-content: center;
+    overflow: scroll hidden;
+}
+.promocoes::-webkit-scrollbar {
+    display: none;
+}
+img {
+    border-radius: 15px 15px 0 0;
+}
+.rodape {
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+.endereco {
+    padding-left: 80px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+.contato {
+    padding-right: 80px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
